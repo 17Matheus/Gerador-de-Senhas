@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Geradordesenha.jpg">
+    <link rel="stylesheet" href="senha.css">
+    <script src="senha.js"></script>
+    <title>Gerador de Senhas</title>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Gerador de Senhas</h1>
+    </header>
+
+    <main>
+
+        <div id='campo'>
+            <label for='pswLeght'>Informe o Tamanho da Senha:</label><br>
+            <input id='pswLeght' type='number' min='1'><br>
+            <label for='pswQtd'>Informe a Quantidade de Senhas:</label><br>
+            <input id='pswQtd' type='number' min='1'><br>
+        </div>
+
+        <div id='check'>
+            <label><input id='special' type='checkbox'> Adicionar Caracteres Especiais</label>
+            <label><input id='number' type='checkbox'> Adicionar Números</label>
+            <label><input id='upperCase' type='checkbox'> Adicionar Letras Maiúsculas</label>
+        </div>
+
+
+        <div class="botao">
+            <button onclick="pswGenerate()">Gerar senha</button>
+            <button onclick="clean()">Limpar senhas</button>
+        </div>
+        <div id='resultado'>
+            <label for="answer">Resultado:</label>
+            <textarea id='answer' rows='6' style='width:500px'>Senhas ...</textarea>
+        </div>
+
+    </main>
+
+</body>
+
+<footer>
+
+    <p>
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script>
+    </p>
+
+
+</footer>
